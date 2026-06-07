@@ -3,7 +3,7 @@
 Технологический процесс разработан в соответствии с ГОСТ 3.1118-82. Тип производства — опытное (единичное). К_ТК = 0,39.
 
 <video controls style="max-width: 100%; margin: 1rem 0;">
-  <source src="../media/vid_disassembly.mp4" type="video/mp4">
+  <source src="https://serovvans.github.io/rfid-ietr/media/vid_disassembly.mp4" type="video/mp4">
   Ваш браузер не поддерживает воспроизведение видео.
 </video>
 
