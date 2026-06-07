@@ -1,0 +1,937 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="ИЭТР МИЭМ.469435.001 РЭ — 3 класс интерактивности">
+      
+      
+      
+      
+        <link rel="prev" href="../04_components/">
+      
+      
+        <link rel="next" href="../06_firmware/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Сборка и монтаж - RFID-считыватель — Руководство по эксплуатации</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="RFID-считыватель — Руководство по эксплуатации" class="md-header__button md-logo" aria-label="RFID-считыватель — Руководство по эксплуатации" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RFID-считыватель — Руководство по эксплуатации
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Сборка и монтаж
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RFID-считыватель — Руководство по эксплуатации" class="md-nav__button md-logo" aria-label="RFID-считыватель — Руководство по эксплуатации" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    RFID-считыватель — Руководство по эксплуатации
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Общие сведения
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_technical_specs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Технические характеристики
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Меры безопасности
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Состав изделия
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Сборка и монтаж
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Сборка и монтаж
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Инструменты и материалы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Маршрутная карта
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Маршрутная карта">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#005" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 005. Входной контроль ЭРИ и печатной платы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#010" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 010. Подготовка рабочего места
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#015-smd-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 015. Нанесение паяльной пасты на SMD-площадки
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#020-smd-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 020. Установка SMD-компонентов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#025-smd-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 025. Пайка SMD-компонентов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#030-tht-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 030. Подготовка и установка THT-компонентов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#035-tht-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 035. Пайка THT-компонентов
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#040" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 040. Монтаж катушки
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#045" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 045. Промывка и визуальный контроль
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#050" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 050. Электрический контроль платы
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#060-attiny13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 060. Прошивка ATtiny13
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#065" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 065. Функциональный контроль
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#070" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 070. Сборка в корпус
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#075" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Операция 075. Финальный контроль и приёмка
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_firmware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Прошивка микроконтроллера
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_operation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Эксплуатация
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_maintenance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Техническое обслуживание
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Возможные неисправности
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Сборка и монтаж</h1>
+<p>Технологический процесс разработан в соответствии с ГОСТ 3.1118-82. Тип производства — опытное (единичное). К_ТК = 0,39.</p>
+<video controls style="max-width: 100%; margin: 1rem 0;">
+  <source src="/media/vid_disassembly.mp4" type="video/mp4">
+  Ваш браузер не поддерживает воспроизведение видео.
+</video>
+
+<p><em>Видео 1 — Анимация разборки/сборки изделия (SolidWorks)</em></p>
+<p>!!! warning "Меры безопасности"
+    Все работы — при отключённом питании. Использовать антистатический браслет и коврик. Включить вытяжку перед пайкой.</p>
+<h2 id="_2">Инструменты и материалы</h2>
+<ul>
+<li>паяльная станция T12 (жало C2 или BC2), 320–350 °C;</li>
+<li>паяльная проволока Sn63/Pb37 ∅0,5 мм (SMD) и ∅0,8 мм (THT);</li>
+<li>паяльная паста SAC305;</li>
+<li>флюс ФКСп (RMA);</li>
+<li>изопропиловый спирт ≥96 %;</li>
+<li>антистатический коврик и браслет;</li>
+<li>пинцет SMD, кусачки, лупа ×4;</li>
+<li>мультиметр;</li>
+<li>отвёртка PH1;</li>
+<li>монтажный клей («Момент Гель»).</li>
+</ul>
+<h2 id="_3">Маршрутная карта</h2>
+<h3 id="005">Операция 005. Входной контроль ЭРИ и печатной платы</h3>
+<p>Проверить комплектность по спецификации: 25 покупных компонентов (21 типоразмер), плата 80 × 50 мм, катушка ∅120 мм / 58 витков.</p>
+<p>Проверить маркировку и дату изготовления. Измерить сопротивление резисторов R1–R11 и ёмкость конденсаторов C1–C6 мультиметром. Дефектные компоненты вернуть на склад.</p>
+<p><strong>Инструмент:</strong> мультиметр, лупа ×4, антистатический коврик, пинцет.</p>
+<hr />
+<h3 id="010">Операция 010. Подготовка рабочего места</h3>
+<p>Застелить рабочее место антистатическим ковриком. Подключить заземляющий браслет. Включить вытяжку. Разложить SMD-компоненты R2–R11, C3, C6, 78L05 по лоткам. Проверить срок годности флюса ФКСп.</p>
+<hr />
+<h3 id="015-smd-">Операция 015. Нанесение паяльной пасты на SMD-площадки</h3>
+<p>Установить плату на монтажный фиксатор. Нанести пасту SAC305 дозатором на площадки: R2–R11 (0805), C3 (100 нФ MLCC), C6 (12 нФ, 0805), 78L05 (SOT-89). Толщина слоя — <strong>0,15–0,20 мм</strong>. Визуально проверить равномерность нанесения.</p>
+<hr />
+<h3 id="020-smd-">Операция 020. Установка SMD-компонентов</h3>
+<p>Установить пинцетом компоненты согласно монтажной схеме:</p>
+<ul>
+<li>R2 (270 кОм), R3 (390 кОм), R4 (1 кОм), R5 (33 кОм), R6 (100 кОм), R7 (33 кОм), R8 (1 кОм), R9 (3 кОм), R10 (1 кОм), R11 (330 Ом) — типоразмер 0805;</li>
+<li>C3 (100 нФ, Y5V), C6 (12 нФ, C0G);</li>
+<li>78L05 (SOT-89) — соблюдать ключ.</li>
+</ul>
+<p>После установки каждого компонента проверить ориентацию и совпадение выводов с площадками.</p>
+<hr />
+<h3 id="025-smd-">Операция 025. Пайка SMD-компонентов</h3>
+<p>Паять паяльником T12 при <strong>320–350 °C</strong>, время касания — <strong>не более 3 с</strong> на площадку. Двуногие компоненты (R, C): сначала один вывод (фиксация), затем второй. 78L05 (SOT-89): поочерёдно три вывода.</p>
+<p><strong>Материалы:</strong> паяльная проволока Sn63/Pb37 ∅0,5 мм, флюс ФКСп.</p>
+<hr />
+<h3 id="030-tht-">Операция 030. Подготовка и установка THT-компонентов</h3>
+<p>Сформировать выводы согласно монтажному чертежу:</p>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Требование</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1 (SQP 10 Вт, <strong>10 Ом</strong>)</td>
+<td>Формовать с шагом под отверстия; не укорачивать до пайки</td>
+</tr>
+<tr>
+<td>C1, C2 (100 мкФ, электролиты)</td>
+<td><strong>Полярность «+»</strong> по маркировке на плате</td>
+</tr>
+<tr>
+<td>C4 (1 нФ)</td>
+<td>Выводы прямые</td>
+</tr>
+<tr>
+<td>C5 (4,7 нФ, Y2)</td>
+<td>Соблюдать ориентацию по монтажному чертежу</td>
+</tr>
+<tr>
+<td>Q1 (BC547A, TO-92)</td>
+<td>Цоколёвка B/C/E</td>
+</tr>
+<tr>
+<td>Q2 (BS170, TO-92)</td>
+<td>Цоколёвка G/D/S</td>
+</tr>
+<tr>
+<td>D1 (1N4148, DO-35)</td>
+<td><strong>Полярность</strong> — полоса = катод</td>
+</tr>
+<tr>
+<td>LM358 (DIP-8)</td>
+<td>В панель, <strong>ключ</strong> к маркировке на плате</td>
+</tr>
+<tr>
+<td>ATTINY13 (DIP-8)</td>
+<td>В панель, <strong>ключ</strong> к маркировке. Прошивка — после монтажа</td>
+</tr>
+<tr>
+<td>BUZZER</td>
+<td><strong>Полярность «+»</strong> по маркировке</td>
+</tr>
+<tr>
+<td>LED (красный, D 5 мм)</td>
+<td>Длинный вывод = анод (+)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="035-tht-">Операция 035. Пайка THT-компонентов</h3>
+<p>Установить плату в держатель. Нанести флюс ФКСп со стороны пайки. Паять при <strong>320–350 °C</strong>, время — <strong>2–3 с</strong> на вывод. Sn63/Pb37 ∅0,8 мм. Пайка — блестящая, конусообразная, без мостиков и холодной пайки.</p>
+<p>Обрезать выступающие выводы на <strong>0,5–1,0 мм</strong> от поверхности пайки.</p>
+<hr />
+<h3 id="040">Операция 040. Монтаж катушки</h3>
+<p>Проверить целостность обмотки мультиметром. Подключить выводы катушки к посадочным местам L1, длина проводников — минимальная. Зафиксировать катушку в корпусе клеем или хомутами. Расстояние от металлических крепёжных элементов — <strong>не менее 10 мм</strong>.</p>
+<hr />
+<h3 id="045">Операция 045. Промывка и визуальный контроль</h3>
+<p>Промыть плату изопропиловым спиртом ≥96 % кистью. Просушить 10–15 мин при комнатной температуре или феном (40–50 °C). Осмотреть под лупой ×4: мостики припоя, холодная пайка, отслоения площадок не допускаются.</p>
+<p><strong>ОТК:</strong> при обнаружении дефектов — возврат на переделку.</p>
+<hr />
+<h3 id="050">Операция 050. Электрический контроль платы</h3>
+<ol>
+<li>Измерить сопротивление VCC–GND — <strong>не менее 10 кОм</strong> (питание отключено). КЗ недопустимо.</li>
+<li>Подать 9 В через ограничивающий резистор 100 Ом. Измерить напряжение на выходе 78L05 — <strong>5 В ± 0,25 В</strong>.</li>
+<li>Ток потребления до прошивки МК — <strong>не более 30 мА</strong>.</li>
+</ol>
+<p><strong>ОТК:</strong> результаты занести в карту контроля.</p>
+<hr />
+<h3 id="060-attiny13">Операция 060. Прошивка ATtiny13</h3>
+<p>См. раздел <a href="../06_firmware/">Прошивка микроконтроллера</a>.</p>
+<hr />
+<h3 id="065">Операция 065. Функциональный контроль</h3>
+<ol>
+<li>Подать питание 9 В. Убедиться в свечении LED.</li>
+<li>Подключить UART-USB адаптер (9600 бод), открыть терминал на ПК.</li>
+<li>Поднести RFID-метку EM4100 к катушке на расстоянии <strong>3–8 см</strong>. В терминале должен появиться ID метки, зуммер — подать сигнал.</li>
+<li>Повторить <strong>3 раза</strong> — результат должен совпадать. Время считывания — <strong>не более 0,5 с</strong>.</li>
+</ol>
+<p><strong>ОТК:</strong> зафиксировать считанные ID в карте испытаний.</p>
+<hr />
+<h3 id="070">Операция 070. Сборка в корпус</h3>
+<ol>
+<li>Установить печатный узел в нижнюю часть корпуса (поликарбонат). Закрепить плату на <strong>стойках M2.5 × 10 мм</strong>. Момент затяжки — <strong>не более 0,1 Н·м</strong>.</li>
+<li>Разместить катушку, зафиксировать клеем. Расстояние от крепёжных элементов ≥ 10 мм.</li>
+<li>Вывести кабель питания и разъём UART через вырезы в корпусе.</li>
+<li>Установить тумблер SW1, подключить к схеме питания.</li>
+<li>Закрыть крышку. Завернуть <strong>1 винт M2.5 × 4 мм</strong>.</li>
+</ol>
+<p><strong>ОТК:</strong> проверить механическую целостность корпуса, отсутствие зазоров.</p>
+<hr />
+<h3 id="075">Операция 075. Финальный контроль и приёмка</h3>
+<ol>
+<li>Повторить функциональный контроль (операция 065) в собранном корпусе.</li>
+<li>Проверить параметры по ТЗ: U МК = 5 В ± 5 %; частота 125 кГц ± 3 кГц; дальность 3–8 см; время ≤ 0,5 с; UART 9600 бод.</li>
+<li>Проверить нагрев корпуса через <strong>30 мин</strong> работы — <strong>не более 45 °C</strong>.</li>
+</ol>
+<p><strong>ОТК:</strong> заполнить паспорт изделия. Упаковать в транспортную тару.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tree", "navigation.top", "navigation.sections", "search.highlight", "search.suggest", "toc.integrate", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
