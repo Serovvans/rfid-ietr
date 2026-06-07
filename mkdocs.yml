@@ -1,0 +1,31 @@
+site_name: "RFID-считыватель — Руководство по эксплуатации"
+site_description: "ИЭТР МИЭМ.469435.001 РЭ — 3 класс интерактивности"
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.tree
+    - navigation.top
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+    - content.code.copy
+  palette:
+    primary: indigo
+    accent: indigo
+
+nav:
+  - Главная: index.md
+  - Общие сведения: 01_general.md
+  - Технические характеристики: 02_technical_specs.md
+  - Меры безопасности: 03_safety.md
+  - Состав изделия: 04_components.md
+  - Сборка и монтаж: 05_assembly.md
+  - Прошивка микроконтроллера: 06_firmware.md
+  - Эксплуатация: 07_operation.md
+  - Техническое обслуживание: 08_maintenance.md
+  - Возможные неисправности: 09_troubleshooting.md
